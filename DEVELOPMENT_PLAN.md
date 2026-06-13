@@ -27,7 +27,7 @@ A scrapbook of your relationship
 
 # Development Roadmap
 
-## Phase 1 — Bring The Fox To Life
+## Phase 1 — Bring The Fox To Life [COMPLETED]
 
 Goal:
 
@@ -39,11 +39,11 @@ Nothing else.
 
 ### Features
 
-* Transparent window
-* Animated sprite
-* Always on top
-* Click-through support toggle
-* Idle animation
+* [x] Transparent window
+* [x] Animated sprite (using Spritesheet)
+* [x] Always on top
+* [ ] Click-through support toggle
+* [x] Idle animation
 
 ### Tech
 
@@ -57,15 +57,14 @@ PySide6
 Structure:
 
 ```text
-fox/
+pet/
 │
 ├── assets/
-│   ├── idle/
-│   ├── walk/
-│   ├── sleep/
+│   ├── icyfox.png (Spritesheet)
+│   ├── icyfox.json (Metadata)
 │
-├── fox.py
-├── animation.py
+├── pet_window.py
+├── sprite_loader.py
 ├── main.py
 ```
 
@@ -81,7 +80,7 @@ Success.
 
 ---
 
-## Phase 2 — Movement System
+## Phase 2 — Movement System [IN PROGRESS]
 
 Goal:
 
@@ -91,12 +90,10 @@ Fox moves around naturally.
 
 ### States
 
-```text
-Idle
-Walking
-Sleeping
-Observing
-```
+* [x] Idle
+* [x] Walking
+* [x] Sleeping
+* [ ] Observing
 
 State machine:
 
@@ -112,11 +109,11 @@ State machine:
 
 Randomly:
 
-* Walk left
-* Walk right
-* Stop
-* Sit
-* Sleep
+* [x] Walk left
+* [x] Walk right
+* [x] Stop (Idle)
+* [ ] Sit
+* [x] Sleep
 
 ### Milestone
 
